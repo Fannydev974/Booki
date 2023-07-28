@@ -1,0 +1,486 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-top: 25px;
+}
+
+img#logo {
+    height: 20px;
+}
+
+
+ul.menu {
+    display: flex;
+    font-weight: 500;
+}
+
+ul.menu li {
+    width: 300px;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 3px solid white;
+}
+
+
+ul.menu li:hover {
+    border-top: 3px solid #0065FC;
+}
+
+ul.menu li:hover a {
+    color: #0065FC;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#recherche {
+    padding-top: 30px;
+    border-radius: 50px;
+    color: black;
+}
+
+#recherche p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    /*pour mettre la police entre normal et gras */
+}
+
+button {
+    background-color: #0065FC;
+    color: white;
+    border-color: #0065FC;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    margin-top: 0;
+}
+
+/*Eclaircir la couleur du contour Marseille,France*/
+input {
+    padding: 15px;
+    width: 235px;
+    border: 1px solid #F2F2F2;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+
+}
+
+/*Foncer la couleur*/
+::placeholder {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* Barre de recherche */
+.fa-location-dot {
+    font-size: 17px;
+    /* Dimension de l'icône localisation */
+    border: 2px solid #F2F2F2;
+    background-color: #F2F2F2;
+    padding: 15px;
+    padding-left: 18px;
+    border-radius: 18px 0px 0px 18px;
+}
+
+/* Partie filtres et info */
+#filtres_info {
+    text-align: left;
+}
+
+
+#titre_filtres {
+    padding-top: 50%;
+}
+
+#filtres {
+    display: flex;
+    margin-top: 3%;
+    /*éléments sur une même ligne*/
+    flex-wrap: wrap;
+    /*Retour à la ligne*/
+    font-weight: bold;
+    font-size: 18px;
+    column-gap: 20px;
+}
+
+/* Alignement barre filtres*/
+#filtres_categories {
+    display: flex;
+    background-color: white;
+    border-radius: 50px;
+    align-self: start;
+}
+
+/*Aspect des filtres*/
+.aspect_filtres {
+    border: 3px solid #F2F2F2;
+    border-radius: 30px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    gap: 10px;
+}
+
+/*curseur sur les filtres*/
+.aspect_filtres:hover,
+.aspect_filtres:focus,
+.aspect_filtres:active {
+    background-color: #DEEBFF;
+    cursor: pointer;
+}
+
+.icone_filtres {
+    width: 5px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 20%;
+    padding: 10px;
+    align-items: flex-start;
+    color: #0065FC;
+    /* pour positionner l'icône au bon endroit */
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+#filtres fa-money-bill-wave {
+    border: gray;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+
+#filtres fa-person {
+    padding-left: 0px;
+    padding-right: 5px;
+    margin: 10px;
+}
+
+#filtres fa-heart {
+    padding-left: 10px;
+
+}
+
+#filtres fa-fire {
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+
+/* Partie info */
+
+#information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 50%
+}
+
+
+/*Logo I*/
+#information .fa-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    border: 3px solid #F2F2F2;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 3px;
+    margin: 20px;
+    margin-left: 0;
+    width: 25px;
+    height: 25px;
+}
+
+
+/* Partie hébergements */
+#hebergements_pop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50%;
+}
+
+
+#hebergements {
+    width: 65%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-bottom: 60%;
+}
+
+
+#hebergements h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 2%;
+}
+
+#hebergements_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    border-radius: 20px;
+    width: 30%;
+    height: 207px;
+    background-color: white;
+    margin-bottom: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.card a {
+    height: 100%;
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    margin-top: 2%;
+
+}
+
+.card-content {
+    font-weight: bold;
+    background-color: white;
+}
+
+.titre_hebergements {
+    margin: 0;
+}
+
+.prix_hebergements {
+    font-weight: 400;
+    margin: 1%;
+}
+
+.euro {
+    font-weight: bold;
+}
+
+
+.etoiles_hebergements,
+.etoiles_populaires {
+    font-size: 0.85vmax;
+    display: flex;
+    /* pour rapprocher les étoiles les unes des autres */
+}
+
+.etoiles_bleues {
+    color: #0065FC;
+}
+
+.etoiles_grises {
+    color: #Dcdfe0;
+}
+
+.bold {
+    display: inline;
+    /* pour supprimer le retour à la ligne de la balise p */
+    font-weight: bold;
+    /*gras du texte*/
+}
+
+/*Afficher plus*/
+
+#afficher_plus a {
+    margin-left: 2%;
+    font-weight: bold;
+}
+
+
+/****** Populaires ***********/
+
+.populaires {
+    width: 32%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-bottom: 60%;
+}
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.populaires-cards .card {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-left: 2%;
+    background-color: white;
+
+}
+
+.populaires-cards img {
+    width: 33%;
+    height: 70%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+    padding-bottom: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.populaires-cards .card-content {
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 5%;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    gap: 15px;
+
+}
+
+.card-link {
+    display: flex;
+}
+
+.populaires-cards .card-txt {
+    width: 100%;
+    margin-bottom: 23%;
+}
+
+.populaires-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.populaires .fa-solid {
+    color: #0065FC;
+}
+
+
+.populaires-cards .card-subtitle {
+    margin: 0;
+    font-weight: 400;
+}
+
+
+.populaires-cards .card-rating {
+    color: #0065FC;
+
+
+}
+
+.card-rating .neutral-star {
+    color: #Dcdfe0;
+}
+
+/***Activités à marseille***/
+
+#Activités {
+
+    width: 20%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards .card {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+}
