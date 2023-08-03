@@ -2,6 +2,7 @@
 <html lang="fr"><!--Langue utilisée-->
 
 <head>
+    <!--détermine la façon dont le texte est transmis et stocké-->
     <meta charset="UTF-8">
     <!--Précise l'affichage sur différents appareils mobiles-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -184,11 +185,11 @@
                             </div>
                         </a>
                     </article>
-
-
                 </div>
                 <div id="afficher_plus"><a href="#">Afficher plus</a></div>
             </section>
+
+            <!--Partie populaires-->
 
             <section class="populaires">
                 <div class="populaires-title">
@@ -258,24 +259,78 @@
                     </a>
                 </div>
             </section>
+        </div>
 
-            <!--Partie activités à Marseille-->
-            <div class="Activités_à_Marseille">
-                <section id="Activités">
-                    <h2>Activités à Marseille</h2>
-                    <div id="Activités_cards">
-                        <a href="#">
-                            <article class="conteneur">
-                                <img src="./images/activites/reno-laithienne.jpg" alt="image du vieux-port">
-                                <h3 class="titre_hebergements">Vieux-Port</h3>
-                            </article>
-                        </a>
-                    </div>
-            </div>
+
+        <!--Partie activités à Marseille-->
+        <div class="Activités_container">
+            <section id="Activités">
+                <h2>Activités à Marseille</h2>
+
+                <div id="Activités_cards">
+                    <a href="#">
+                        <article class="conteneur">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="image du vieux-port">
+                            <h3 class="titre_hebergements">Vieux-Port</h3>
+                        </article>
+                    </a>
+
+                    <a href="#">
+                        <article class="conteneur">
+                            <img src="./images/activites/paul-hermann.jpg" alt="image du Fort de Pomègues">
+                            <h3 class="titre_hebergements">Fort de Pomègues</h3>
+                        </article>
+                    </a>
+
+                    <a href="#">
+                        <article class="conteneur">
+                            <img src="./images/activites/kilyan-sockalingum.jpg"
+                                alt="image Parc national des calanques">
+                            <h3 class="titre_hebergements">Parc national des Calanques</h3>
+                        </article>
+                    </a>
+
+                    <a href="#">
+                        <article class="conteneur">
+                            <img src="./images/activites/florian-wehde.jpg" alt="image Notre dame de la garde">
+                            <h3 class="titre_hebergements">Notre-Dame-de-la-Garde</h3>
+                        </article>
+                    </a>
+                </div>
             </section>
-
+        </div>
     </main>
-    <footer></footer>
+
+    <!--Pied de page-->
+
+    <footer>
+        <div class="bloc-footer">
+            <a href="#">
+                <ul class="infos">
+                    <h4>À propos</h4>
+            </a>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+
+            <a href="#">
+                <ul class="infos">
+                    <h4>Nos hébergements</h4>
+            </a>
+            <li><a href="#"> Charte qualite</a></li>
+            <li><a href="#"> Proposer votre hôtel</a></li>
+            </ul>
+
+            <a href="#">
+                <ul class="infos">
+                    <h4>Assistance</h4>
+            </a>
+            <li><a href="#">Centre d’aide</a></li>
+            <li><a href="#">Nous contacter </a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
