@@ -1,0 +1,315 @@
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+
+    /**Logo Booki***/
+    img#logo {
+        height: 50px;
+        align-items: center;
+    }
+
+    .logo {
+        width: 50%;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        position: absolute;
+        justify-content: space-between;
+        margin-top: 3%;
+        margin-left: 60%;
+        font-size: 20px;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ul.menu {
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 0;
+        margin-right: 20%;
+        padding-right: 60%;
+        margin-top: 5%;
+    }
+
+    .menu__hebergements {
+        width: 100%;
+        height: 50px;
+        margin-top: 20%;
+        margin-left: 15%;
+        font-size: 2.1vmax;
+        justify-content: center;
+    }
+
+    .menu__activites {
+        width: 100%;
+        height: 50px;
+        margin-top: 20%;
+        justify-content: flex-end;
+        font-size: 2.1vmax;
+        margin-left: -30%;
+        margin-right: -40%;
+    }
+
+    ul.menu li:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+
+    #recherche {
+        width: 100%;
+        justify-content: flex-start;
+        margin-left: 2%;
+        padding-right: 10%;
+    }
+
+    h1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: bold;
+        text-align: left;
+        font-size: 1.9vmax;
+        flex-direction: row;
+        margin-left: 2%;
+    }
+
+    #recherche p {
+        width: 100%;
+        text-align: left;
+        font-size: 1.7vmax;
+    }
+
+    #formulaire {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .fa-location-dot {
+        font-size: 25px;
+    }
+
+    input {
+
+        width: 100%;
+        border: 1px solid #F2F2F2;
+        color: #000000;
+        font-weight: bold;
+        font-size: 18px;
+        outline: none;
+    }
+
+    ::placeholder {
+        font-size: 20px;
+    }
+
+    .search_button_mobile {
+        font-size: 25px;
+        height: 70px;
+    }
+
+    .search_button_mobile {
+        display: inline-block;
+    }
+
+    .bouton_rechercher_desktop_tablette {
+        display: none;
+    }
+
+    #filtres {
+        width: 100%;
+        height: 250px;
+        margin-left: 5%;
+    }
+
+    #filtres h3 {
+        width: 100%;
+        font-size: 1.5vmax;
+        margin-left: 2%;
+    }
+
+    #filtres_categories {
+        width: 100%;
+        height: 150px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    .aspect_filtres {
+        width: 45%;
+        flex-direction: row;
+        gap: 10px 30px;
+    }
+
+
+    #information {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 5px;
+        margin-left: 7%;
+        border-radius: 50%;
+    }
+
+    #hebergements_pop {
+        width: 100%;
+        display: flex;
+        margin-left: 0%;
+        padding-right: 2%;
+        flex-direction: column-reverse;
+    }
+
+    .populaires {
+        width: 100%;
+        height: 750px;
+        display: flex;
+        margin-left: 2%;
+        padding-right: 5%;
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .section-title {
+        margin-left: 2%;
+        font-size: 1.9vmax;
+
+    }
+
+    /*logo populaire*/
+    .fa-chart-line {
+        margin-right: 2%;
+        font-size: 1.5vmax;
+        font-weight: bold;
+    }
+
+    .populaires-cards {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .populaires-cards .card {
+        width: 90%;
+        height: 170px;
+        display: flex;
+        margin-bottom: 10%;
+        justify-content: space-around;
+        border: solid 1px #f2f2f2;
+        box-shadow: 5px 5px 5px #f2f2f2;
+    }
+
+    .populaires-cards img {
+        width: 40%;
+        height: 150px;
+    }
+
+    .card-content {}
+
+
+    #hebergements {
+        width: 100%;
+        border-radius: 20px;
+        margin-right: 2%;
+        margin-top: -2%;
+        padding-left: 5%;
+        border-radius: 0;
+        background-color: white;
+    }
+
+    #hebergements h2 {
+        font-size: 1.9vmax;
+    }
+
+    #hebergements_cards {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 0;
+        margin-top: 10%;
+    }
+
+    .card {
+        width: 100%;
+        height: 270px;
+        display: flex;
+        border-radius: 20px;
+        background-color: white;
+        margin-bottom: 3%;
+        margin-left: -5%;
+        padding-right: 1%;
+        justify-content: center;
+        border: solid 1px #f2f2f2;
+        box-shadow: 5px 5px 5px #f2f2f2;
+    }
+
+    .card-content .card-rating {
+        width: 60%;
+        display: flex;
+        font-size: 1.2vmax;
+    }
+
+    .etoiles_hebergements,
+    .etoiles_populaires {
+        font-size: 0.85vmax;
+        display: flex;
+    }
+
+    #afficher_plus {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: -3%;
+        margin-bottom: 10px;
+        font-size: 1.3vmax;
+    }
+
+    .Activités_container {
+        width: 100%;
+        height: 1400px;
+        margin-left: 3%;
+        margin-bottom: 5%;
+    }
+
+    #Activités h2 {
+        margin-top: 1%;
+        font-size: 1.9vmax;
+    }
+
+    #Activités_cards {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        border-radius: 20px;
+        border: solid 1px #f2f2f2;
+        box-shadow: 5px 5px 5px #f2f2f2;
+    }
+
+    .bloc-footer {
+        width: 100%;
+        padding-bottom: 2%;
+        flex-direction: column;
+    }
+
+    .infos h4 {
+        padding-left: 1%;
+        margin-bottom: 0;
+    }
+
+    .infos li {
+        padding-left: 1%;
+        margin-bottom: 0;
+    }
+}
